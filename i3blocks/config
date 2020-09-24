@@ -1,0 +1,15 @@
+[click]
+full_text=Update!
+command=yay
+color=#5e81ac
+
+# Query my default IP address only on startup
+[ip]
+command=hostname -i | awk '{ print "IP:" $1 }'
+interval=once
+color=#5e81ac
+
+# Update time every 5 seconds
+[time]
+command=date +%T
+interval=5
